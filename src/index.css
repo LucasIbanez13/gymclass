@@ -1,0 +1,112 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-color:  #efefef;
+    margin: 0;
+    padding: 0;
+}
+
+#Header {
+    display: flex;
+    align-items: center;
+}
+  
+#Header img {
+    height: 150px; 
+    margin-right: 220px;
+}
+  
+#Header h1 {
+    margin: 0;
+}
+  
+
+header {
+    font-family: "Montserrat", sans-serif;
+    background-color: #222;
+    color: rgb(255, 255, 255);
+    padding: 3rem 2rem ;
+    transition: color 0.4s ease; /*Transicion del color  */
+    text-decoration:none;
+    text-align: center ; /* texto centrado(center) o izq(left) o derecha(right) (justify, agrega espacio para usar todo el ancho) */
+     /* DECORACION DE TEXTO (lunderline SUBRALLADO) (line-through TACHADO) (overline LINEA ARRIVA)*/
+    text-shadow: 3px 5px 5px rgb(63, 127, 248)
+    
+}
+header:hover {
+    color: black;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+section article { /*Para que tengan el estilo de tarjetas*/
+    transition: box-shadow 0.3s ease; /*Para animar las tarjetas (box-shadow), con el 0.3s es el tiempo de la transicion y con ease el algoritmo para que acelere y desacelere*/
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+
+section article:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0 ,0.4);
+}
+
+section article h2, section article p {
+    margin: 1rem;
+}
+
+footer img {
+    height: 150px; 
+    margin-right: 200px;
+}
+
+footer {
+    display:flex;
+    align-items:center;
+    background-color: #222;
+    padding: 3rem;
+    color: #fff;
+}
+
+footer h1 {
+    font-family: "Montserrat", sans-serif;
+    transition: color 0.4s ease;
+    text-align: center;
+    font-size: 4rem;
+    transition: color 0.4s ease;
+    text-shadow: 3px 5px 5px rgb(63, 127, 248)
+}
+footer h1:hover {
+    color: black;
+}
+
+footer section {
+    float:right;
+}
+footer p {
+    display:contents;
+    
+}
+
+footer a {
+    transition: color 0.3s ease; /*Transicion del color  */
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: cornflowerblue;
+}
+.copyri{
+    position: absolute;
+    bottom: 9px;
+}
+
